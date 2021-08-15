@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <form method = "post" action="ActualizarUsuario" name="Actualizar" onsubmit="return validar(this)">
+  <div class="container-fluid mt-4">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"> Actualizar Perfil </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="notify-tab" data-toggle="tab" href="#notify" role="tab" aria-controls="notify" aria-selected="true"> Eliminar Perfil </a>
+    </li>
+    
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labbelledby="profile-tab">
+      <div class="row">
+        
+        <div class="col-lg-6 col-md-8 col-sm-12 pt-4">
+          <h4>Curriculum</h4>
+          <hr/>
+          <div class="form-row">
+            <div class="form-group col-lg-6 col-md-12 col-sm-12">
+              <label for="username"> Nombre </label>
+              <input class="form-control" id="nombre" name="nombre" value="<%  %>">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="email"> correo </label>
+              <input class="form-control" id="email" name="correo" value="<%%>">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="firstname"> Apellido Paterno</label>
+              <input class="form-control" id="firstname" name="apellido_pat" value="<%%>">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="lastname">Apellido Materno</label>
+              <input class="form-control" id="lastname" name="apellido_mat" value="<%%>">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+                <label for="phone">Contraseña</label>
+                <input type="password"class="form-control" id="phone" name="contrasena" value="<%%>">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="password">Confirma contraseña</label>
+              <input type="password" class="form-control" id="password" name="ConfirContra" value="<%%>">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+                <label for="phone">Telefono</label>
+              <input class="form-control" id="phone" name="telefono"   value="<%%>">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="password">Edad</label>
+              <input type="text" class="form-control" id="password" name="edad" value="<%  %>">
+            </div>
+            <div class="form-group col-lg-6 col-md-12"></div>
+              
+            
+            <div class="form-group col-lg-6 col-md-12">
+                <label for="phone">N° de cecula</label>
+              <input class="form-control" id="phone" name="cedula"   value="<%%>">
+            </div>
+              <div class="form-group col-lg-6 col-md-12">
+                <label for="phone">Universidad</label>
+              <input class="form-control" id="phone" readonly="readonly" name="uni" value="<%%>">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="password">Profesion</label>
+              <input type="text" class="form-control" id="password" readonly="readonly" name="prof" value="<%%>"> 
+            </div>             
+            <input class="btn btn-primary btn-block" type="submit" value="Actualizar Perfil" name="Envia">
+            </form>
+                </div>
+            <div id="contiene"> 
+                    <li><a href="#openModal" class="cool">¡Terminar!</a></li>
+                    <br><br><br>
+                    <li><a href="" class="cool">Modificar</a></li>
+                </div>
+        </div>        
+      </div>
+    </div>
+  </body>
+</html>

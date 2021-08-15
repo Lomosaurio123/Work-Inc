@@ -1,0 +1,14 @@
+header{
+    background: cornflowerblue;
+    color: white;
+}
+
+article{
+    background: coral;
+}
+aside{
+    background: green;
+}
+.pequeña{
+    background: blue;
+}

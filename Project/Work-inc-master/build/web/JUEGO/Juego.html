@@ -1,0 +1,362 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="../Disegno/CSS/CSSFormDad.css" rel="stylesheet" type="text/css"/>
+        <link href="../Disegno/CSS/DADOS.css" rel="stylesheet" type="text/css"/>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <title>Idea tu negocio</title>
+
+
+    </head>
+    <body>
+        <section class="example2" >
+            <ul class="cuadrados">
+                <div class="container" style="width: 100%; height: 70%; overflow-y: scroll;" >
+                    <form class="form_reg">
+                        <div class="form_top">
+                            <div class="hit-the-floor">Idea tu proyecto</div>
+                        </div>
+                    </form>
+                    <div>
+                        <input type="button" class="accordion" value="&#8962 ¿Cómo jugar?">
+                        <div class="panel">             
+                            <div class="checkbox">
+                                <center><font face="Andalus" size="5">
+                                    
+                                    1.Da click en el boton "off" para activarlo, una vez que lo hayas activado deja que el dado se mueva.<br>
+                                    2.Cuando estes sefuro de que es el momento indicado, da click nuevamente para hacer que el dado se detenga.<br>
+                                    3.Ahora revisa en la barra que aparecio que modelo de impacto e idea tienes.<br>
+                                    4.Comienza a buscar un negocio factible con esas dos ideas, si el modelo o idea no es comodo para ti puedes cambiar y volver a intentarlo.<br>
+                                    5.¡Y comienza tu negocio!<br>
+
+                                    </font><br></center>
+                            </div>
+                        </div>
+                        <input type="button" class="accordion" value="&#8962 Preguntas frecuentes">
+                        <div class="panel">             
+                            <div class="checkbox">
+                                <center><font face="Andalus" size="5">
+                                    
+                                        <h3>¿Què es un modelo de negocio?</h3>
+                                        La definición de este concepto afirma que un modelo de negocio es la base sobre la que va a funcionar tu empresa. La acción que te va a permitir generar ingresos.<br>
+                                        Como siempre se va a entender mejor con un ejemplo.<br>
+                                        Si tienes una mercería en tu barrio, tu modelo de negocio consiste en la venta de productos al por menor. O lo que es lo mismo, vendes productos a consumidores finales (no a empresas).<br>
+                                        Si seguimos con el ejemplo de la mercería, en tu modelo de negocio también deberías definir las siguientes cuestiones:<br>
+                                                > De dónde vas a sacar los productos que vendes (proveedores<br>
+                                                > Quiénes son tus clientes.<br>
+                                                > Y cómo vas a llegar a ellos.<br>
+                                        El modelo es la base o fase previa antes de realizar tu plan de negocio. En este último ya vas a analizar al detalle todo lo que concierne a tu proyecto.<br>
+                                        <h3>¿Còmo se que negocio hacer?</h3>
+                                        Nosotros te estamos delimitando el area ya que cuando emprendes puedes hacer lo que sea, por esto en ocasiones es complicado pensar en que es lo que puedo hacer.<br>
+                                        Una vez tengas tu modelo de negocio e idea vas a comenzar a buscar algo en esa area, una oportunidad y cuando la tengas podras comenzar a desarrollar mejor ese negocio.<br>
+                                        
+                                        
+                                        
+                                    </font><br></center>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <input style="display: none" type="radio" checked id="radio-front" name="select-face"/>    
+                    <input style="display: none" type="radio" id="radio-left" name="select-face"/>
+                    <input style="display: none" type="radio" id="radio-right" name="select-face"/>
+                    <input style="display: none" type="radio" id="radio-top" name="select-face"/>
+                    <input style="display: none" type="radio" id="radio-bottom" name="select-face"/>
+                    <input style="display: none" type="radio" id="radio-back" name="select-face"/>
+
+                    <div class="separator"></div>
+
+
+                    <div class="space3d">
+
+
+                        <div class="_3dbox">
+                            <div class="_3dface _3dface--front"></div>
+                            <div class="_3dface _3dface--top"></div>
+                            <div class="_3dface _3dface--bottom"></div>
+                            <div class="_3dface _3dface--left"></div>
+                            <div class="_3dface _3dface--right"></div>
+                            <div class="_3dface _3dface--back"></div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="onoffswitch" style="left: 450px">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="contador()">
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+
+                    <br>
+
+                    <input type="button" class="accordion" value="&#8962 Resultado" id="result" style="display: none;">
+                    <div class="panel">             
+                        <div class="checkbox">
+                            <h1 id="ModNe"></h1>
+                            <p id="Des"></p>
+                            
+                            <h1 id="">¿Què problematica debo tratar?</h1>
+                            <h3 id="ide"></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <script language="JavaScript" type="text/javascript">
+                    function m1() {
+                        var checkBox = document.getElementById("myonoffswitch");
+                        var C6 = document.getElementById("radio-right");
+                        var C1 = document.getElementById("radio-left");
+                        var C2 = document.getElementById("radio-front");
+                        var C3 = document.getElementById("radio-top");
+                        var C5 = document.getElementById("radio-bottom");
+                        var C4 = document.getElementById("radio-back");
+                        var R = Math.round((Math.random() * (6 - 1) + 1));
+                        if (R === 1) {
+                            var dat = "radio-left";
+                            var R1 = Math.round((Math.random() * (2 - 1) + 1));
+                            if (R1 === 1) {
+                                var ModNeg = "Modelo de negocio de varios lados";
+                                var Desc = "En este caso, la clave de este modelo es reunir a diversos grupos independientes y ser capaz de aportarles valor a todos.La publicidad funciona bajo este sistema. Un ejemplo mundialmente conocido es Google.La gran G ofrece de forma gratuita a sus usuarios la posibilidad de localizar información gracias a su buscador. Del otro lado están los anunciantes.Ellos pagan por insertar sus ofertas en el buscador y así, llegar a todas las personas que usan Google. Tal y como lo describe Javier Megías en este artículo, otro ejemplo de negocio de varios lados son los periódicos gratuitos.El funcionamiento es idéntico al de Google. Por un lado, tenemos a los lectores del periódico que reciben todos los días las noticias de forma gratuita.Por el otro, están los anunciantes que pagan por colocar su publicidad.";
+                            } else {
+                                var ModNeg = "Modelo de negocio online: Generación de leads";
+                                var Desc = "La base de todo negocio es siempre la misma. Una persona A tiene una necesidad y una persona B la solución. A paga a B por ayudarla. Pero y qué ocurre cuando tú no encuentras quien te supla esa necesidad o no tienes tiempo para buscar y comparar. Este nuevo modelo de negocio se enfoca justo en eso. Favorecen el contacto entre personas con necesidades y personas que se encargan de suplirlas.";
+                            }
+                        } else {
+                            if (R === 2) {
+                                var dat = "radio-front";
+                                var R1 = Math.round((Math.random() * (2 - 1) + 1));
+                                if (R1 === 1) {
+                                    var ModNeg = "Modelo de negocio de cola larga";
+                                    var Desc = "El modelo de negocio Long Tail se basa en una idea muy sencilla: en vez de centrar nuestro potencial de venta en productos muy demandados (y muy competidos), nos enfocamos en productos con menos demanda y menos competencia. Volvamos a un ejemplo. El encargado de una tienda de música coloca los grandes éxitos del momento en su escaparate. Todo lo que está demandando el público, él lo tiene. En cambio sus ventas no son buenas,¿qué ocurre? Su tienda está en un barrio alejado del centro comercial. Y además allí hay varias tiendas también de música. Un día dando un paseo por una de las tiendas de su competencia, ve que un grupo de chicos se queja porque no encuentran el grupo que ellos buscan. Nuestro encargado piensa que es una pena ya que él sí lo tiene. Son un grupo menos conocido, difícilmente lo van a encontrar en las tiendas del centro.Y ahí surge la idea: especializarse en ese tipo de música. Hay menos demanda, pero toda la que haya va a ser para él ya que nadie más vende ese tipo de música. Esa es la clave de un modelo de negocio de cola larga.";
+                                } else {
+                                    var ModNeg = "Modelo de negocio online: Nube y SAAS";
+                                    var Desc = "Este sistema consiste en una versión nueva de los modelos de negocio basados en la suscripción, la suscripción consiste en que la persona accede a un servicio o producto por una cantidad de dinero un período determinado de tiempo. La llegada de internet ha posibilitado que las empresas de software hayan modificado su modelo de negocio a esta vertiente. Ahora el cliente ya no tiene que realizar una importante inversión de dinero, lo que hace es pagar una cuota mensual. Esto posibilita que personas que antes no podían acceder por su precio a la herramienta, ahora sí lo hagan. La empresa también mantiene un flujo constante de ingresos ya que el usuario nunca termina de pagar. Este sistema lo suelen combinar mucho con el modelo freemium.";
+                                }
+                            } else {
+                                if (R === 3) {
+                                    var dat = "radio-top";
+                                    var R1 = Math.round((Math.random() * (2 - 1) + 1));
+                                    if (R1 === 1) {
+                                        var ModNeg = "Modelo de negocio de suscripción";
+                                        var Desc = "Este modelo es muy conocido pero sigue siendo altamente efectivo. La suscripción consiste en que el cliente paga por acceder a un servicio o producto durante un período de tiempo determinado. La base de este sistema es la estabilidad, el conseguir unos ingresos recurrentes en el tiempo. Además, tenemos la posibilidad de ofrecer a estos usuarios unos productos o servicios complementarios.Nos podemos suscribir a una revista, a un gimnasio o a recibir muestras de productos. En internet, las empresas de software online usan mucho este modelo de negocio. En vez de pagar una única vez por llevarte el programa, pagas una pequeña cuota mensual para tener acceso al programa.";
+                                    } else {
+                                        var ModNeg = "Modelo de negocio online: El dropshipping";
+                                        var Desc = "Otro ejemplo de modelo de negocio basado en el e-commerce pero planteado de una manera completamente distinta.El dropshipping nos permite ofrecer el catálogo de productos de un proveedor sin falta de que nosotros hayamos pagado antes por la mercancía. Solo pagamos al proveedor por los productos que hemos conseguido vender. También nos olvidamos de tener que almacenar. El proceso se ejecutaría de la siguiente manera: Montas una tienda online y ofertamos una serie de productos. Un cliente se interesa y te compra. Al recibir la orden, pagas al proveedor por ese producto y él se encarga de enviarlo.";
+                                    }
+                                } else {
+                                    if (R === 4) {
+                                        var dat = "radio-back";
+                                        var R1 = Math.round((Math.random() * (2 - 1) + 1));
+                                        if (R1 === 1) {
+                                            var ModNeg = "Modelo de negocio online: El  e-commerce";
+                                            var Desc = "El comercio electrónico está creciendo de una forma increíble. Solo hace falta echar un vistazo a las cifras. Según la Comisión Nacional de los Mercados y la Competencia (CNMC), la facturación del sector de las tiendas online llegó a casi los 5.000 millones de euros. Estamos hablando de un 27% más que el año pasado. El hecho de que la tecnología cada vez sea más accesible, facilita que cualquier usuario se lance al mundo de los e-commerce. La hipersegmentación y un trato cada más especializado y personal al cliente están detrás del éxito de estos negocios.";
+                                        } else {
+                                            var ModNeg = "Modelo de negocio Peer to Peer";
+                                            var Desc = "Hablamos ahora de los tipos de modelos de negocios entre iguales, de consumidor a consumidor. Un ejemplo serían todas las plataformas que están surgiendo para alquilar, intercambiar o vender productos o servicios. Cada vez se ven más empresas en forma de aplicación para móvil que ponen en contacto a personas que se pueden ayudar las unas a las otras.";
+                                        }
+                                    } else {
+                                        if (R === 5) {
+                                            var dat = "radio-bottom";
+                                            var R1 = Math.round((Math.random() * (2 - 1) + 1));
+                                            if (R1 === 1) {
+                                                var ModNeg = "Modelo de negocio online: El marketing de afiliación";
+                                                var Desc = "Este tipo de modelo de negocio se basa en recomendar productos. Si la persona compra, tú te llevas  una comisión de la tienda. El sistema es sencillo. Una persona busca información acerca de un producto y localiza un artículo donde tú explicas todos sus beneficios y características. Ante tu explicación, ese cliente decide comprar y pincha en el enlace que tú pones hacia la tienda. Ese enlace es especial porque le sirve a la tienda para identificar que esa persona viene desde tu web.";
+                                            } else {
+                                                var ModNeg = "Modelo de negocio de cebo y anzuelo";
+                                                var Desc = "l cebo de este modelo se refiere a ofrecer un producto a un coste muy reducido. En algunos casos se puede llegar a rebajar el precio hasta por debajo de lo que le costó a la empresa, ¿Por qué? Porque para usar ese producto, el usuario necesita comprar otro complementario que es del que vamos a obtener la rentabilidad. Esto se suele dar cuando el cebo es un producto del que no podemos sacar márgenes interesantes. En cambio, al reducir su precio, aumentamos la demanda. Lo que va a implicar la comprar del anzuelo que es donde obtenemos una alta rentabilidad.";
+                                            }
+                                        } else {
+                                            var dat = "radio-right";
+                                            var R1 = Math.round((Math.random() * (2 - 1) + 1));
+                                            if (R1 === 1) {
+                                                var ModNeg = "Modelos de negocio online: El crowdfunding";
+                                                var Desc = "Este modelo de negocio explota las posibilidades de la financiación colectiva de cara a desarrollar productos o servicios interesantes. Los usuarios se unen económicamente para ayudar a que un “creador” realice su idea. Hay proyectos de lo más diverso. Desde los míticos conciertos de música a ratones con función escáner o calcetines intercambiables para ciegos.";
+                                            } else {
+                                                var ModNeg = "Modelo de negocio Freemium";
+                                                var Desc = "Al igual que antes, aquí estamos ofreciendo nuestros servicios o productos de forma gratuita aunque de forma limitada. Si la persona quiere llegar a disfrutar del servicio/producto en su totalidad ya tendría que pagar. Este tipo de sistema es muy habitual en el software online o en las aplicaciones para móvil. Por ejemplo, la amplia mayoría de videojuegos para móvil usan este sistema.";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        var R2 = Math.round((Math.random() * (16 - 1) + 1));
+                            if (R2 === 1) {
+                                var Idea = "Mùsica";
+                            } else {
+                                if (R2 === 2) {
+                                    var Idea = "Deporte";
+                                } else {
+                                    if (R2 === 3) {
+                                        var Idea = "Moda rapida";
+                                    } else {
+                                        if (R2 === 4) {
+                                            var Idea = "Educaciòn";
+                                        } else {
+                                            if (R2 === 5) {
+                                                var Idea = "Publicidad";
+                                            } else {
+                                                if (R2 === 6) {
+                                                    var Idea = "Medio Ambinete";
+                                                } else {
+                                                    if (R2 === 7) {
+                                                        var Idea = "Cine";
+                                                    } else {
+                                                        if (R2 === 8) {
+                                                            var Idea = "Matemàticas";
+                                                        } else {
+                                                            if (R2 === 9) {
+                                                                var Idea = "Finanzas";
+                                                            } else {
+                                                                if (R2 === 10) {
+                                                                    var Idea = "Emprendimiento";
+                                                                } else {
+                                                                    if (R2 === 11) {
+                                                                        var Idea = "Psicologìa";
+                                                                    } else {
+                                                                        if (R2 === 12) {
+                                                                            var Idea = "Telefonia celular";
+                                                                        } else {
+                                                                            if (R2 === 13) {
+                                                                                var Idea = "Comida";
+                                                                            } else {
+                                                                                if (R2 === 14) {
+                                                                                    var Idea = "Transporte";
+                                                                                } else {
+                                                                                    if (R2 === 15) {
+                                                                                        var Idea = "Seguridad";
+                                                                                    } else {
+                                                                                        if (R2 === 16) {
+                                                                                            var Idea = "Diseño";
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        if (checkBox.checked === true) {
+                            document.getElementById(dat).checked = true;
+                            document.getElementById("result").style.display = "none";
+                            document.getElementById("ModNe").innerHTML = ModNeg;
+                            document.getElementById("Des").innerHTML = Desc;
+                            document.getElementById("ide").innerHTML = Idea;
+                        } else {
+                            setInterval(clearInterval());
+                            document.getElementById("result").style.display = "block";
+                        }
+
+
+                    }
+
+                    function contador() {
+                        setInterval("m1()", 500);
+                    }
+
+
+                </script>
+                <script>
+                    function myFunction1() {
+                        var Ran = document.getElementById("Ran");
+                        var text = document.getElementById("Ran");
+                        if (checkBox.checked === true) {
+
+                        }
+                        window.alert("aaaa");
+                    }
+                </script>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.maxHeight) {
+                                panel.style.maxHeight = null;
+                            } else {
+                                panel.style.maxHeight = panel.scrollHeight + "px";
+                            }
+                        });
+                    }
+
+                </script>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </body>
+</html>

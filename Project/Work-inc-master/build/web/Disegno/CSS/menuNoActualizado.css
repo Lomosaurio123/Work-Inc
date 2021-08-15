@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main{
+    width: 100%;
+    display: flex;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background:#227FBC;
+}
+
+header span{
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    transition: all 300ms;
+    cursor: pointer;
+    position: relative;
+    top:16px;
+    left: 10px;
+} 
+
+header span:hover{
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+.content-menu{
+    width: 112px;
+    /*height: 100%;*/
+    background: #161616;
+    transition: all 300ms;
+}
+
+.content-menu2{
+    margin-left: -112px;
+}
+
+.content-menu li{
+    list-style: none;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.content-menu li:hover{
+    transform: translateY(10px);
+    background: rgba(0,0,0,0.5);
+    
+}
+
+.content-menu li span{
+    font-size: 40px;
+}
+
+.content-menu li h4{
+    font-weight: 100;
+    transform: translateY(14px) translateX(-110px);
+    transition: all 300ms;
+}
+
+.icon1{
+    color: #BA7404;
+}
+
+.icon2{
+    color: #1BBFB2;
+}
+
+
+.icon3{
+    color: #A319A4;
+}
+
+
+.icon4{
+    color: #760B0B;
+}
+
+
+.icon5{
+    color: #1B7E9F;
+}
+
+
+.icon6{
+    color: #6A26DF;
+}
+
+
+.icon7{
+    color: #6BF929;
+}
+
+
+.icon8{
+    color: #F9E11B;
+}
+
+
+.icon9{
+    color: #fff;
+}
+
+.content-menu:hover .text1{
+    transform: translateX(0px);
+    transition: all 100ms;
+}
+
+.content-menu:hover .text2{
+    transform: translateX(0px);
+    transition: all 200ms;
+}
+
+.content-menu:hover .text3{
+    transform: translateX(0px);
+    transition: all 300ms;
+}
+
+.content-menu:hover .text4{
+    transform: translateX(0px);
+    transition: all 400ms;
+}
+
+.content-menu:hover .text5{
+    transform: translateX(0px);
+    transition: all 500ms;
+}
+
+.content-menu:hover .text6{
+    transform: translateX(0px);
+    transition: all 600ms;
+}
+
+.content-menu:hover .text7{
+    transform: translateX(0px);
+    transition: all 700ms;
+}
+
+.content-menu:hover .text8{
+    transform: translateX(0px);
+    transition: all 800ms;
+}
+
+.content-menu:hover .text9{
+    transform: translateX(0px);
+    transition: all 900ms;
+}
+
+article{
+    padding: 20px;
+}
+
+article h1{
+    font-size:50px;
+    text-align: center;
+}
+
+article p{
+    font-size: 20px;
+    margin-top: 20px;
+}

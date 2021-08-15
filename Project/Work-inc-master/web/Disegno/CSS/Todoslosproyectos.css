@@ -1,0 +1,181 @@
+
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.titulo{
+    text-align: center;
+    font-size: 36px;
+}
+.general{
+    display: inline-block;
+    width: auto;
+    margin: auto;
+}
+.proyecto{
+    height: 470px;
+    width: 45%;
+    flex-wrap: wrap;
+    display: flex;
+    float: left;
+    margin: 18px;
+    border-radius: 7px;
+    box-shadow: 0px 14px 32px 0px rgba(0,0,0,0.5);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.proyecto .imagen{
+    width: 50%;
+}
+.proyecto .imagen img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+.informacion{
+    width: 50%;
+    border-radius: 0 7px 10px 7px;
+    background: #fff;
+}
+.texto{
+    width: 100%;
+    text-align: center;
+}
+.texto h1{
+    padding-top: 10px;
+    font-size: 34px;
+    color: #474747;
+
+}
+.texto h1, .mas{
+    font-family: serif;
+}
+.texto h2{ 
+    font-size: 38px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    letter-spacing: .01em;
+}
+.texto h3{
+    text-transform: capitalize; 
+    height: 20px;
+    font-family: sans-serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+}
+.texto p{
+    height: 130px;
+    font-family: sans-serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+}
+.mas{
+    height: 103px;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+}
+.mas a{
+    height: 50px;
+    width: 176px;
+    border-radius: 60px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .2em;
+    color: #fff;
+    padding: 1rem 2rem;
+    background: rgb(54,156,197);
+    cursor: pointer;
+    text-decoration: none;
+}
+.mas a:hover{
+    color: #000000;
+    background-color: #cccccc;
+    text-decoration: none;
+    transition-duration: 2s;
+}
+
+@media (max-width: 1200px){
+    body{
+        overflow-y: visible; 
+    }
+    .general{
+        display: block;
+    }
+    .proyecto{
+        margin: auto;
+        float: none;
+        width: 500px;
+        margin-top: 20px;
+    }
+}
+
+
+/*-----------------------------------------NUEVO VENTANA MODAL-------------------------------------*/
+
+.modalDialog{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background: rgba(229,229,229,0.5);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin: 5% auto;
+    padding-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(54,156,197,.3);
+
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 99999;
+}
+.close{
+    background: transparent;
+    line-height: 25px;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    width: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    color: #333333;
+    border: 2px solid #333333;
+    z-index: 8;
+}
+.close:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

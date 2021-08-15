@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container-fluid mt-4">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="notify-tab" data-toggle="tab" href="#notify" role="tab" aria-controls="notify" aria-selected="true">Notifications</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="notify" aria-selected="true">History</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labbelledby="profile-tab">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-lg-6 col-md-8 col-sm-12 pt-4">
+          <h4> User Information </h4>
+          <hr/>
+          <div class="form-row">
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="username">Username</label>
+              <input class="form-control" id="username" readonly="readonly" value="administrator">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="email">Email</label>
+              <input class="form-control" id="email" value="user@thq.com">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="firstname">First Name</label>
+              <input class="form-control" id="firstname" value="FirstName">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="lastname">Last Name</label>
+              <input class="form-control" id="lastname" value="LastName">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="phone">Phone Number</label>
+              <input class="form-control" id="phone" value="123-456-1234">
+            </div>
+            <div class="form-group col-lg-6 col-md-12">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" value="thisisnotapassword">
+            </div>
+            <button class="btn btn-primary btn-block">Save</button>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="notify" role="tabpanel" aria-labelledby="notify-tab">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-lg-6 col-md-8 col-sm-12 pt-4">
+          <h4>Notifications For</h4>
+          <select id="nonsig" class="form-control">
+            <option>51618563</option>
+            <option>56156432</option>
+          </select>
+          <hr />
+          <div class="form-row">
+            <div class="col-lg-6 col-sm-12 form-group">
+              <label for="invoice">When I receive an invoice: </label>
+              <select id="invoice" class="form-control">
+                <option>Send an email</option>
+                <option>Do not email me</option> 
+              </select>
+            </div>
+            <div class="col-lg-6 col-sm-12 form-group">
+              <label for="invoice">When I receive a chargeback: </label>
+              <select id="invoice" class="form-control">
+                <option>Send an email</option>
+                <option>Do not email me</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-sm-12 form-group">
+              <label for="invoice">When I receive a G86: </label>
+              <select id="invoice" class="form-control">
+                <option>Send an email</option>
+                <option>Do not email me</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-sm-12 form-group">
+              <label for="invoice">When I receive a FleetHQ Call: </label>
+              <select id="invoice" class="form-control">
+                <option>Send an email</option>
+                <option>Do not email me</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-sm-12 form-group">
+              <label for="invoice">Documents on hold older than </label>
+              <select id="invoice" class="form-control">
+                <option>Do not email me</option>
+                <option>1 Day</option>
+                <option>5 Days</option>
+                <option>14 Days</option>
+                <option>1 Month</option>
+                <option>3 Months</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-sm-12 form-group">
+              <label for="invoice">When news is released</label>
+              <select id="invoice" class="form-control">
+                <option>Send an email</option>
+                <option>Do not email me</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+      <div class="row my-4">
+        <div class="col"></div>
+        <div class="col-lg-8 col-md-10 col-sm-12">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tue Jan 08 2019</td>
+                <td>Login</td>
+              </tr>
+              <tr>
+                <td>Tue Jan 08 2019</td>
+                <td>Invalid Login</td>
+              </tr>
+              <tr>
+                <td>Tue Jan 08 2019</td>
+                <td>Password Change</td>
+              </tr>
+              <tr>
+                <td>Tue Jan 08 2019</td>
+                <td>Submitted document 15435</td>
+              </tr>
+              <tr>
+                <td>Tue Jan 08 2019</td>
+                <td>Created document 15435</td>
+              </tr>
+              <tr>
+                <td>Tue Jan 08 2019</td>
+                <td>Login</td>
+              </tr>
+              <tr>
+                <td>Tue Jan 08 2019</td>
+                <td>Submitted claim C975432</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    </body>
+</html>

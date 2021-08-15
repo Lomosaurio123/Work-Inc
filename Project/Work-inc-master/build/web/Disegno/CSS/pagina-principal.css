@@ -1,0 +1,112 @@
+body{
+    background-color: #2C3E50;
+    border: 0;
+    margin: 0;
+    height: 200%;
+}
+
+h1{
+    color: aliceblue;
+    position: absolute;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*a{
+    font: bold 25px Verdana;
+    text-decoration: none;
+    color:#f2f2f2;
+    border:4px solid #f2f2f2;
+    padding: 10px 20px 10px 20px;
+    border-radius: 80px;
+    ransition: background .5s,color .5s;
+    webkit-transition: background .5s,color .5s;
+    -moz-transition: background .5s,color .5s;
+    -o-transition: background .5s,color .5s;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}*/
+
+a:hover{
+    background: #f2f2f2;
+    color: #2C3E50;
+    text-decoration:none;
+}
+
+video{
+    position:relative;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+
+.inf{
+    position: relative;
+    top: 60%; /* Buscamos el centro horizontal (relativo) del navegador */
+    left: 0%; /* Buscamos el centro vertical (relativo) del navegador */
+    width: 100%; /* Definimos el ancho del objeto a centrar */
+    height: 100%; /* Definimos el alto del objeto a centrar */
+    margin-top: -28%; /* Restamos la mitad de la altura del objeto con un margin-top */
+    margin-left: 0%; /* Restamos la mitad de la anchura del objeto con un margin-left */
+}
+
+
+
+
+.radios label{
+    color:#0074D9;
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position:relative;
+    font-size:1em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+ .radios label:hover{
+    background: rgba(0,116,217,0.2);
+}
+
+
+
+ .radios input[type="radio"]::-ms-check  +label{
+    padding: 5px 15px;
+    background: #0074D9;
+    border-radius: 2px;
+    color:#000;
+}
+
+ .dobles{
+    
+  width: 45%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+
+
+
+
+
+ }

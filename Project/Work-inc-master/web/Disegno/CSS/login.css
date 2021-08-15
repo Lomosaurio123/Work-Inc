@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*background-image: url( '../../RecursosGraficos/Imagenes/login.jpg') ;*/
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #0074D9;
+}
+
+.Login-box{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+@media (max-width: 400px){
+    .Login-box{
+        width: 90%;
+    }
+}
+
+.Login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.Login-box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.Login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Login-box input[type="text"],
+.Login-box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.Login-box input[type="submit"]{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.Login-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.Login-box a:hover{
+    color: #fff;
+}
+
+.Login-box input[type="submit"]:hover{
+    background: #2E86C1;
+    transition: background .5s,color .5s;
+    -webkit-transition: background .5s,color .5s;
+    -moz-transition: background .5s,color .5s;
+    -o-transition: background .5s,color .5s;
+} 
+
+.Login-box .imagen{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:-50px;
+    left: calc(50% - 50px);
+}
+
+.Login-box .Registro{
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 20px;
+    color: darkgrey;
+    text-align: center;
+}
+
+.Login-box .Registro:hover{
+    color: #fff;
+}

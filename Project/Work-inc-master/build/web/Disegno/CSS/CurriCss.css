@@ -1,0 +1,126 @@
+img{
+    width: 100px;
+    height: 130px; 
+}
+
+#contenedorT{
+    margin-left: 30%;
+    margin-top: 3%;
+    width: 600px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td{
+   padding: 20px;  
+}
+
+#Exp,#Est,#Cnt{
+    background-color: #33ccff;
+    color: white;
+}
+#Exp{
+    border-right: solid 3px #fff;
+}
+
+input{
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: #666666;
+}
+
+#contiene{
+    margin-left: 160%;
+    margin-top: -30%;
+}
+li{
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 0 25px;  
+}
+.cool::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s
+}
+
+.cool:hover{
+    width: 100px;
+}
+
+.modalDialog{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background: rgba(255,255,255,0.5);
+    z-index: 0;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target{
+    opacity: 2;
+    pointer-events: auto;
+}
+
+.modalDialog > div{
+    width: 450px;
+    position:relative;
+    margin: 5% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 20px;
+    background: #99ffff;
+}
+
+#actividad{
+    background-color: transparent;
+}
+.bota
+  {
+  text-decoration: none;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #FFFFFF;
+  background-color: #33ffff;
+  border-radius: 6px;
+  border: 2px solid white; 
+  cursor:  pointer;
+  }
+  
+  .bota:hover
+  {
+  color: #009999;
+  background-color: #ffffff;
+  }
+
+  .h2{
+      font-family: 'Playfair Display SC', serif;
+      font-size: 40px;
+      letter-spacing: 5px;
+      color: #fff;
+      background: rgba(0,0,0,0.3);
+      padding: 10px 20px;
+      padding-left: 30px;
+      margin-left: -20px;
+      position: relative;
+      width: 60%;
+      box-shadow: 1px 1px 5px #000;
+      -moz-box-shadow: 1px 1px 5px #000;
+      -webkit-box-shadow: 1px 1px 5px #000;
+  }
