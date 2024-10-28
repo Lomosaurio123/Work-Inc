@@ -9,7 +9,7 @@ You can collaborate with them and merge your ideas.
 
 <br/><br/>
 
-## **The things that you can do with WORK-INC**
+## **The things that you can do with WORK-INC.**
 
 ---
 
